@@ -45,3 +45,11 @@ Not noticed much as yet as this is primarily revision.
 
 Is there anything you'd do differently if you were to repeat the learning exploration again?
 No
+
+
+TRACK AND COMMIT
+How would you describe stage and commit to your non-tech-savvy friend?
+The process of staging and committing can be likened to sending an email containing an attachment.
+'Staging' would be the part where you select the attachment you want to include in your email.
+- You haven't actually sent the email yet however, so you can still modify your document, or choose to send a different one instead.
+'Committing' would be actually sending the email with the selected attachment.

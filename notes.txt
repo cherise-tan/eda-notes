@@ -1,0 +1,44 @@
+COMMAND LINE
+rm -rf ALSO rmdir (remove folder)
+rm file.txt (remove a file)
+pushd (push directory)
+popd (pop directory)
+cp (copy a file/directory)
+robocopy (robust copy)
+mv (move a file/directory)
+more (page through a file)
+type (print a whole file)
+cat document.txt (print out document contents in terminal)
+dir -r (find files)
+select-string (find things inside files)
+echo (print some arguments)
+
+
+GIT
+git clone ... new_folder_name (clone repository and rename folder at the same time)
+git add -A (add all files)
+git status (checks repository status - which files are inside it, which changes still need to be committed, which branch you are currently working on)
+git branch branch_name (creates new local branch)
+git checkout branch_name (change to new local branch)
+git merge branch_name (merges the branch_name branch into the master branch)
+git push --set-upstream origin branch_name (set upstream branch - will create if doesn't exist remotely)
+git log (displays information about existing commits)
+git log --oneline (displays most pertinent info on one line)
+git log --stat (displays the files changed in the commit)
+git log -p (displays the actual changes made to a file -> shortened from the flag --patch)
+git log -p -w (hides whitespace changes -> e.g indents)
+git show fdf5493 (displays info about the given commit - fdf5493)
+git diff (displays what changes have been made but not yet committed)
+
+
+GITIGNORE AND GLOBBING
+Globbing lets you use special characters to match patterns/characters
+- blank lines for spacing
+- # marks line as comments
+- * matches 0+ characters
+- ? matches 1 character
+- [abc] matches a, b or c
+- ** matches nested directories
+--- 'a/**/z matches: a/z || a/b/z || a/b/c/z
+
+Example: 'samples/*.jpg' would allow you to ignore all jpg images within the 'samples' folder

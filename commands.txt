@@ -1,0 +1,20 @@
+rm -rf ALSO rmdir (remove folder)
+rm file.txt (remove a file)
+pushd (push directory)
+popd (pop directory)
+cp (copy a file/directory)
+robocopy (robust copy)
+mv (move a file/directory)
+more (page through a file)
+type (print a whole file)
+cat document.txt (print out document contents in terminal)
+dir -r (find files)
+select-string (find things inside files)
+echo (print some arguments)
+
+
+GIT
+git add -A (add all files)
+git branch branch_name (creates new local branch)
+git checkout branch_name (change to new local branch)
+git push --set-upstream origin branch_name (set upstream branch - will create if doesn't exist remotely)

@@ -15,6 +15,7 @@ rm: remove a file/folder
 Did you learn anything unexpected?
 No
 
+
 VERSION CONTROL
 Whats the difference between git and GitHub? Can you think of an analogy to describe them?
 Git is version control software that can manage a project's source code history
@@ -29,3 +30,18 @@ Yes
 
 Did you stick to the timebox suggestions? If not, why not?
 No - 24 mins total rather than 65. Due to prior experience with git and github.
+
+
+GIT
+What is a GitHub work flow?
+- Create a branch
+- Create a commit
+-- use GIT ADD to move files from the Working Directory to the Staging Index
+- Open a pull request
+- Merge
+
+What did you notice about your own learning? What did you do when you were confused or blocked?
+Not noticed much as yet as this is primarily revision.
+
+Is there anything you'd do differently if you were to repeat the learning exploration again?
+No

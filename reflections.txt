@@ -1,0 +1,15 @@
+In a couple of sentences, how would you describe the command line in plain English? Can you think of an analogy for it?
+The command line allows you to interact with your computer without a graphical user interface, by typing lines of commands (instructions).
+
+Did you stick to the timebox guidelines? If not, what change would you make next time?
+Yes
+
+Name 5 commands you used and what they do.
+mkdir: make a new directory
+cd: change directory
+touch: create a file
+start: open a file
+rm: remove a file/folder
+
+Did you learn anything unexpected?
+No

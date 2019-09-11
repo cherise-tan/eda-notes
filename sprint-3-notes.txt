@@ -1,0 +1,32 @@
+MANIPULATING ARRAYS
+.push: append to end of array
+.unshift: append to start of array
+.pop: remove from end of array
+.shift: remove from start of array
+
+ARGUMENTS VS PARAMETERS
+ARGUMENTS are specified to the function as part of the function call
+PARAMETERS act as placeholders for the values that are input to a function when it is called
+
+e.g. 	sayHello(name) { 
+	   alert(name); 
+	};		
+	sayHello("cherise")
+
+- cherise is an argument
+- name is an argument
+
+ARRAYS AND OBJECTS
+Arrays: use indexes to access and modify data
+Objects: use properties
+- useful for storing data in a structured way
+
+Can access object properties using . or [] notation
+- . when you know the name of the property you are accessing
+- [] needs to be used if the property has a space in its name
+
+Deleting from an object
+- delete object.value;
+
+Check if object has a particular propertyy
+- object.hasOwnProperty

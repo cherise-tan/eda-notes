@@ -1,0 +1,41 @@
+Flexbox
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+- Gives the container the ability to alter its items' width/height/order to best fill the available space
+- A flex container expands items to fill available space or shrinks them to prevent overflow
+
+PARENT PROPERTIES (flex container)
+display
+- this defines a flex container and enables a flex context for all of its children
+- CSS: .container { display: flex;}
+flex-direction
+- this defines the main axis and therefore the direction flex items are placed in the flex container (horizontal or vertical)
+- CSS: .container { flex-direction: row | row-reverse | column | column-reverse; }
+	- row (left to right), column (top to bottom)
+flex-wrap
+- allows items to wrap as needed (rather than all try fit into one line)
+- CSS: .container { flex-wrap: nowrap | wrap | wrap-reverse; }
+	- nowrap (all on one line), wrap (wrap into multiple lines from top to bottom)
+justify-content
+- defines the alignment along the MAIN AXIS (distribute extra free space leftover)
+- CSS: .container { justify-content: flex-start | flex-end | start | end | left | right | center | space-between | space-around; }
+	- flex-start (default - items packed towards start of flex diection), flex-end (toward end of flex-direction)
+	- start | end (start/end of writing-mode direction)
+	- left | right (left/right edges of container)
+	- center (centered along the line)
+align-items
+- how flex items are laid out in the CROSS AXIS on the current line
+
+
+CHILD PROPERTIES (flex items)
+order
+- controls order in which they appear in the flex container
+- CSS: .item { order: <integer>; }
+flex-grow
+- defines ability for flex item to grow if necessary; accepts a unitless value
+- if all items have a flex-grow of 1, the remaining space will be distributed equally to all children
+- if one item has a flex-grow of 2, the remaining space will take up twice as much space as the others
+flex-shrink
+- ability for a flex item to shrink if necessary
+flex-basis
+- defines default size of an element before the remaining space is distributed. Can be a length or a keyword
+- CSS: .item { flex-basis: <length> | auto }

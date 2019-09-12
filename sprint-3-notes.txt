@@ -4,6 +4,7 @@ MANIPULATING ARRAYS
 .pop: remove from end of array
 .shift: remove from start of array
 
+
 ARGUMENTS VS PARAMETERS
 ARGUMENTS are specified to the function as part of the function call
 PARAMETERS act as placeholders for the values that are input to a function when it is called
@@ -15,6 +16,7 @@ e.g. 	sayHello(name) {
 
 - cherise is an argument
 - name is an argument
+
 
 ARRAYS AND OBJECTS
 Arrays: use indexes to access and modify data
@@ -30,3 +32,45 @@ Deleting from an object
 
 Check if object has a particular propertyy
 - object.hasOwnProperty
+
+
+THE DOM
+Accessing HTML elements
+- getElementsByTagName (returns an array of elements)
+- getElementsByClassName (returns an array of elements)
+- getElementById (returns a single element/node)
+
+- document.querySelector('#id-name')
+	- will find the FIRST matching element
+- document.querySelectorAll('h1#id-name')
+	- will find ALL matching elements
+
+Changing elements
+- document.querySelector('.dom').innerHTML = "New Text Here"
+	- will change the text of the html element
+
+- if you want to change the text of multiple elements at the same time, need to use a loop
+	var spans = document.querySelectorAll('.dom');
+	for (var i = 0; i < spans.length; i++) {
+		spans[i].innerHTML = "New Text";
+	};
+
+- another option is to convert the nodelist of matching elements to an array, and then use a forEach loop
+	var spans = Array.prototype.slice.call(document.querySelectorAll('.dom'));
+	spans.forEach(function (span) { span.innerHTML = "New Text" });
+
+- document.querySelector('h1').setAttribute('style', 'color: red') });
+	- will set the style attribute for the element (nb: need to loop if want to change more than 1 element!)
+
+Events
+Events are handled by attaching an 'event handler' to the object we want to keep track of, and providing it
+with a 'callback' function that executes when the event occurs
+
+- document.querySelector("#btn").onclick = function (event) { console.log(event) };
+
+It is however better to use the 'addEventListener' method
+- this allows for more than 1 event to be added, and for more than 1 callback
+
+- document.querySelector("#btn").addEventListener('click', function(event) { console.log(event) }, false);
+
+There are many other events: e.g. keydown, keyup, keypress

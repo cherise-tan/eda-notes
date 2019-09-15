@@ -1,0 +1,45 @@
+JAVASCRIPT BUILT IN FUNCTIONS
+
+STRINGS
+string.split(separator)
+- splits a string into an array of substrings
+- string.split("") will split th string between each character
+- string.split(" ") will split the string at every " " 
+   - i.e. it will split the string between each individual word
+
+string.substring(position)
+- extracts characters from a string between two specified indices, and returns the substring
+- string.substring(1, 4) will return elements '1' and '4'
+- string.substring(2) will return all elements from '2' onwards
+
+ARRAYS
+array.join(separator)
+- returns the array as a string
+- the elements will be separated by a 'separator'
+- if the separator is not specified, they will separated by a ',' on default
+- array.join(" ") will separate all words by a " "
+- array.join("") will return all array elements with no space inbetween them
+
+var newArray = array.map((currentValue) => {
+   return <modify-currentValue>;
+})
+- creates a new array with the results of calling a function on each element
+- 'currentValue' will represent the value of the current element
+- calls the provided function once on each element in the array, in order
+
+array.find((currentValue) => {
+   return currentValue > 10;
+})
+- returns the value of the first element in an array that passes a test
+- the test is provided as a function
+- if it finds a value, it returns that value and stops executing
+- if it doesn't find a value, it returns undefined
+
+array.filter((currentValue) => {
+   return currentValue > 10;
+});
+- creates an array filled with all array elements that pass a test 
+- the test is provided as a function
+
+array.reverse()
+- returns an reversed array
